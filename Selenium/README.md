@@ -1,3 +1,8 @@
 ## Questions
+<link rel="stylesheet" type="text/css" href="styles.css">
 
-- [What is Selenium?](questions/question_1.md)
+<details>
+<summary>What is Selenium?</summary>
+
+Selenium is a suite of tools designed to automate web browsers...
+</details>
