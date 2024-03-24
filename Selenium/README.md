@@ -197,3 +197,34 @@ public class Example {
 **3. Fluent Waits:** This defines the maximum amount of time to wait for a particular condition and frequency to test the condition before throwing an exception to “ElementNotVisibleException.”</p>
 
 </details>
+
+<details>
+<summary><b>6. What is XPath?</b></summary>
+
+---
+
+  <p>While DOM is the recognized standard way for navigating through an HTML element tree, XPath is the navigation tool used to locate a web element based on its XML path.
+
+XML stands for ‘Extensible Markup Language’ and is used to store, organize, and transport arbitrary data. It stores data in a key-value pair that is very much similar to HTML tags. Both being markup languages and falling under the same umbrella, XPath can be used to locate HTML elements.
+
+The fundamental concept behind locating elements using XPath is traversing between various elements across the entire page and thus enabling a user to find an element with the reference of another element.Selenium is an open-source automation testing tool used for testing web applications. It provides a set of libraries and APIs that allow developers to interact with web elements, simulate user actions, and validate web application behavior. Selenium supports various programming languages such as Java, Python, C#, Ruby, and JavaScript.</p>
+
+</details>
+
+<details>
+<summary><b>7. Difference between Relative and Absolute XPath</b></summary>
+
+---
+
+| Feature          | Relative XPath                                              | Absolute XPath                                              |
+|------------------|-------------------------------------------------------------|-------------------------------------------------------------|
+| Scope            | Scoped to the current element and its descendants           | Scoped from the root element to the desired element         |
+| Flexibility      | More flexible and less brittle, adjusts with changes in DOM | Less flexible and more brittle, prone to breaking with DOM changes |
+| Readability      | More readable, easier to understand and maintain            | Less readable, can be lengthy and complex                   |
+| Performance      | Typically faster as it only traverses a subset of the DOM   | Can be slower, as it traverses the entire DOM tree          |
+| Usage            | Preferred choice for dynamic and changing web pages         | Used when elements have static positions in the DOM         |
+| Syntax           | Uses concise syntax, typically starts with "//"             | Requires full path from the root element                    |
+| Example          | `//input[@id='username']`                                  | `/html/body/div[1]/form/div[2]/input[1]`                   |
+
+</details>
+
