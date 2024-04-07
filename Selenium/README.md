@@ -228,3 +228,89 @@ The fundamental concept behind locating elements using XPath is traversing betwe
 
 </details>
 
+<details>
+  <summary><b>8. Explain the difference between single slash and double slash in XPath.</b></summary>
+
+---
+- __Single slash (/)__:
+  Single slash is used to create an XPath with an absolute path. In this case, the XPath would start selection from the document’s start node.
+- __Double slash (//)__:
+  Double slash is used to create an XPath with a relative path. In this case, the XPath would start selection from anywhere within the document.
+</details>
+
+<details>
+  <summary><b>9. What is a Locator? How can you find elements in Selenium?</b></summary>
+
+---
+Selenium uses locators to find and match the elements of a web page that it needs to interact with. There are different types of Selenium locators to identify various web elements on a web page:
+
+- __ID:__ Matches by element ID. For example `<button id=”submit”>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.ID, “submit”)
+```
+
+- __Class Name:__ Matches by element class name. For example `<button class=”btn”>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.CLASS_NAME, “btn”)
+```
+
+- __Name:__ Matches by element name. For example `<button name=”button1″>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.NAME, “button1”)
+```
+
+- __Link Text:__ Matches by exact text. For example `<a href=”https://example.com”>Click here</a>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.LINK_TEXT, “Click here”)
+```
+
+- __Partial Link Text:__ Matches by partial text. For example `<a href=”https://example.com”>Click here to register</a>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.PARTIAL_LINK_TEXT, “here to”)
+```
+
+- __Tag Name:__ Matches by HTML tag name. For example `<button>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.TAG_NAME, “button”)
+```
+
+- __CSS Selector:__ Matches by CSS selector. For example `<button class=”btn primary”>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.CSS_SELECTOR, “.btn.primary”)
+```
+
+- __XPath:__ Matches by XPath query. For example `<button class=”btn primary”>`. </br>
+
+__Usage:__
+
+```Selenium
+driver.find_element(By.XPATH, “//button[@class=’btn primary’]”)
+```
+
+</details>
+
+<!-- Example: Adding a button -->
+
+
+
