@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>1. Why Playwright?</b></summary>
+<summary><b>2. Why Playwright?</b></summary>
 
 ---
 
